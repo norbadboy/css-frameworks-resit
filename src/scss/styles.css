@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gentium Book Basic";
+  font-weight: 400;
+}
+
+.navbar-brand--text {
+  text-decoration: none;
+  color: #333333;
+  font-size: 36px;
+}
+
+.navbar-items--links a {
+  font-family: "Archivo Narrow";
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.btnPrimary,
+.btnPrimary:hover {
+  color: #ffffff;
+  background-color: rgba(51, 51, 51, 0.76);
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+.footer-body--icons-li a {
+  text-decoration: none;
+}
+
+.footer-body--icons-li .fa,
+.footer-body--icons-li .fa-brands {
+  background-color: white;
+  color: #8dbde7;
+  font-size: 25px;
+}
+
+.navbar-brand--body {
+  background-color: #ffffff;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.upper-section {
+  background-image: url("/img/background-homepage.png");
+  background-size: cover;
+  height: 50vh;
+}
+
+.upper-section--textbox-body {
+  background-color: rgba(255, 255, 255, 0.64);
+}
+
+.lower-section {
+  background-color: #8dbde7;
+  height: 50vh;
+}
+
+.lower-section--card-header {
+  background-color: #81cfc2;
+  color: #ffffff;
+}
+
+.footer-body p {
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+
+.vl {
+  border-left: 1px solid green;
+  height: 25px;
+}
+
+.upper-section--body,
+.lower-section--body {
+  max-width: 1200px;
+}/*# sourceMappingURL=styles.css.map */

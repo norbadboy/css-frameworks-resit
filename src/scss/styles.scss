@@ -21,7 +21,9 @@ h5 {
   color: map-get($colors, "whiteColor");
 }
 p {
+  font-family: map-get($map: $font-family, $key: "font-secondary");
   line-height: 34px;
+  font-size: 16px;
 }
 
 //buttons and links
@@ -30,7 +32,7 @@ p {
   color: map-get($colors, "tertiary");
   font-size: 36px;
 }
-.navbar-items--links a {
+.nav-item--link {
   font-family: map-get($map: $font-family, $key: "font-tertiary");
   text-decoration: none;
   font-size: 15px;
@@ -52,65 +54,68 @@ p {
   color: map-get($colors, "fourth");
   font-size: 25px;
 }
+.navbar-nav .nav-link.active {
+  color: map-get($colors, "secondary");
+}
+.nav-link {
+  color: map-get($colors, "tertiary");
+}
 
 //navbar
-.navbar-brand--body {
-  background-color: map-get($map: $colors, $key: "whiteColor");
-  padding: 0 60px;
-  @include md {
-    padding: 0 25px;
-  }
+header {
+  align-items: center;
+  justify-content: center;
 }
-.navbar {
-  width: 100%;
-}
+.navbar-container {
+  width: 1280px;
+  padding: 0 40px;
 
-//home body
-.upper-section {
-  background-image: url("/img/background-homepage.png");
-  background-size: cover;
-  padding: 60px;
-  height: 50vh;
   @include md {
-    padding: 60px 25px;
+    padding: 0 5px;
   }
 }
-.upper-section--textbox-body {
-  background-color: map-get($colors, "whiteColorLowerOpacity");
+.navbar-container-body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 40px;
+  background-color: map-get($colors, "whiteColor");
   @include md {
-    display: none;
+    padding: 0 5px;
   }
 }
-.lower-section {
-  background-color: map-get($colors, "fourth");
+.navbar-container-body--row {
+  width: 1200px;
 }
-.lower-section--body {
-  padding: 0 60px;
+.navbar-items--links {
+  justify-content: end;
   @include md {
-    padding: 0 25px;
+    height: 380px;
+    justify-content: start;
   }
 }
-.lower-section--card-container {
-  @include md {
-    flex-direction: column;
-  }
-}
-.lower-section--card-body {
-  @include md {
-    margin-bottom: 40px;
-  }
-}
-.lower-section--card-header {
-  background-color: map-get($colors, "secondary");
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+.navbar-brand--text:hover {
+  color: map-get($colors, "tertiary");
 }
 
 //footer
-.footer-container {
-  margin: 0 60px;
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0 60px;
   @include md {
-    margin: 0 25px;
+    padding: map-get($map: $padding, $key: "padding-md");
+  }
+}
+.footer-container {
+  width: 1160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  @include lg {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 .footer-body {
@@ -129,6 +134,13 @@ p {
   padding: 0;
   @include lg {
     margin-bottom: 15px;
+    align-items: center;
+  }
+}
+.footer-body--icons-li {
+  @include lg {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .footer-body--text {
@@ -138,7 +150,8 @@ p {
     margin-bottom: 15px;
   }
 }
-.footer-body p {
+.footer-body p,
+.footer-body--text p {
   font-family: map-get($map: $font-family, $key: "font-secondary");
   font-size: 12px;
   color: map-get($colors, "footerTextColor");
@@ -147,11 +160,6 @@ p {
   }
 }
 .vl {
-  border-left: 1px solid green;
+  border-left: 1px solid #8d8d8d;
   height: 25px;
-}
-//breakpoints
-.upper-section--body,
-.lower-section--body {
-  max-width: 1280px;
 }

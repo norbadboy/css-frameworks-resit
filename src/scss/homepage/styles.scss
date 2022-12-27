@@ -1,0 +1,54 @@
+@use "../variables" as *;
+@use "../typography" as *;
+@use "../layout" as *;
+
+//home body
+.upper-section {
+  background-image: url("/img/background-homepage.png");
+  background-size: cover;
+  padding: 60px;
+  height: 50vh;
+  @include md {
+    padding: 60px 25px;
+  }
+}
+.upper-section--textbox-body {
+  background-color: map-get($colors, "whiteColorLowerOpacity");
+  @include md {
+    display: none;
+  }
+}
+.lower-section {
+  background-color: map-get($colors, "fourth");
+}
+.upper-section--body {
+  @include lg-up {
+    margin: 0 auto;
+    width: 1160px;
+  }
+}
+.lower-section--body {
+  padding: 0 60px;
+  @include md {
+    padding: map-get($map: $padding, $key: "padding-md");
+  }
+}
+.lower-section--card-container {
+  @include md {
+    flex-direction: column;
+  }
+}
+.lower-section--card-body {
+  @include md {
+    margin-bottom: 40px;
+  }
+}
+.lower-section--card-header {
+  background-color: map-get($colors, "secondary");
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.upper-section--body,
+.lower-section--body {
+  max-width: 1280px;
+}

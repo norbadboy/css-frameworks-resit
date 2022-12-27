@@ -1,0 +1,7 @@
+@use "../variables" as *;
+@use "../typography" as *;
+@use "../layout" as *;
+
+.products-main--body {
+  background-color: map-get($colors, "fourth");
+}

@@ -25,6 +25,18 @@ p {
   line-height: 34px;
   font-size: 16px;
 }
+a {
+  text-decoration: none;
+  font-family: map-get($map: $font-family, $key: "font-secondary");
+}
+
+//colors
+.bg-primary {
+  background-color: map-get($colors, "primary") !important;
+}
+.bg-secondary {
+  background-color: map-get($colors, "secondary") !important;
+}
 
 //buttons and links
 .navbar-brand--text {
@@ -59,6 +71,13 @@ p {
 }
 .nav-link {
   color: map-get($colors, "tertiary");
+}
+.pagination .page-link {
+  color: map-get($colors, "fourth");
+  font-size: 14px;
+}
+.disabled > .page-link {
+  color: map-get($colors, "disabled");
 }
 
 //navbar

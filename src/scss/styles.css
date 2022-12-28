@@ -23,6 +23,19 @@ p {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+  font-family: "Open Sans";
+}
+
+.bg-primary {
+  background-color: #efef94 !important;
+}
+
+.bg-secondary {
+  background-color: #81cfc2 !important;
+}
+
 .navbar-brand--text {
   text-decoration: none;
   color: #333333;
@@ -61,6 +74,15 @@ p {
 
 .nav-link {
   color: #333333;
+}
+
+.pagination .page-link {
+  color: #8dbde7;
+  font-size: 14px;
+}
+
+.disabled > .page-link {
+  color: #aaaaaa;
 }
 
 header {

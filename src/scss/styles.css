@@ -133,6 +133,10 @@ label {
   background-color: #81cfc2;
 }
 
+#flexCheckDefault:checked {
+  background-color: #81cfc2;
+}
+
 header {
   align-items: center;
   justify-content: center;

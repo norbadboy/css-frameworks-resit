@@ -106,6 +106,9 @@ label {
 .btn-primary:hover {
   background-color: map-get($colors, "secondary");
 }
+#flexCheckDefault:checked {
+  background-color: map-get($colors, "secondary");
+}
 
 //navbar
 header {

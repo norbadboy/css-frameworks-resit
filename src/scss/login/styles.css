@@ -23,13 +23,8 @@
   max-width: 1000px;
 }
 
-@media (min-width: 992px) {
-  .login-main--container {
-    width: 50%;
-  }
-}
 @media (min-width: 768px) {
   .login-main--container {
-    width: 70%;
+    width: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -23,10 +23,7 @@
   max-width: 1000px;
 }
 .login-main--container {
-  @include lg-up {
-    width: 50%;
-  }
   @include md-up {
-    width: 70%;
+    width: 50%;
   }
 }

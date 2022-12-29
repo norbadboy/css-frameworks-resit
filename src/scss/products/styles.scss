@@ -2,9 +2,6 @@
 @use "../typography" as *;
 @use "../layout" as *;
 
-.products-main--body {
-  background-color: map-get($colors, "fourth");
-}
 .products-title {
   font-size: 40px;
 }

@@ -28,12 +28,47 @@ a {
   font-family: "Open Sans";
 }
 
+label {
+  font-family: "Open Sans";
+  color: #919191;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.form-control::-moz-placeholder {
+  color: #cecece;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #cecece;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
+.form-control::placeholder {
+  color: #cecece;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
 .bg-primary {
   background-color: #efef94 !important;
 }
 
 .bg-secondary {
   background-color: #81cfc2 !important;
+}
+
+.form-control {
+  border: 2px solid #81cfc2;
 }
 
 .navbar-brand--text {
@@ -85,6 +120,19 @@ a {
   color: #aaaaaa;
 }
 
+.btn-primary {
+  color: #cecece;
+  background-color: #333333;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  background-color: #81cfc2;
+}
+
 header {
   align-items: center;
   justify-content: center;
@@ -132,6 +180,15 @@ header {
   color: #333333;
 }
 
+.main--body {
+  background-color: #8dbde7;
+}
+
+.card {
+  position: static;
+  width: 100%;
+}
+
 footer {
   align-items: center;
   display: flex;
@@ -140,7 +197,7 @@ footer {
 }
 @media (max-width: 768px) {
   footer {
-    padding: 0 25px;
+    padding-bottom: 15px;
   }
 }
 

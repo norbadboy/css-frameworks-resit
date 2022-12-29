@@ -29,6 +29,19 @@ a {
   text-decoration: none;
   font-family: map-get($map: $font-family, $key: "font-secondary");
 }
+label {
+  font-family: map-get($map: $font-family, $key: "font-secondary");
+  color: map-get($colors, "labelColor");
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.form-control::placeholder {
+  color: map-get($colors, "inputColor");
+  font-family: map-get($map: $font-family, $key: "font-secondary");
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
 
 //colors
 .bg-primary {
@@ -36,6 +49,9 @@ a {
 }
 .bg-secondary {
   background-color: map-get($colors, "secondary") !important;
+}
+.form-control {
+  border: 2px solid map-get($colors, "secondary");
 }
 
 //buttons and links
@@ -79,6 +95,17 @@ a {
 .disabled > .page-link {
   color: map-get($colors, "disabled");
 }
+.btn-primary {
+  color: map-get($colors, "inputColor");
+  background-color: map-get($colors, "tertiary");
+  border: none;
+  font-family: map-get($map: $font-family, $key: "font-secondary");
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.btn-primary:hover {
+  background-color: map-get($colors, "secondary");
+}
 
 //navbar
 header {
@@ -118,6 +145,15 @@ header {
   color: map-get($colors, "tertiary");
 }
 
+//body
+.main--body {
+  background-color: map-get($colors, "fourth");
+}
+.card {
+  position: static;
+  width: 100%;
+}
+
 //footer
 footer {
   align-items: center;
@@ -125,7 +161,7 @@ footer {
   justify-content: center;
   padding: 0 60px;
   @include md {
-    padding: map-get($map: $padding, $key: "padding-md");
+    padding-bottom: 15px;
   }
 }
 .footer-container {

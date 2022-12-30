@@ -204,6 +204,12 @@ footer {
     padding-bottom: 15px;
   }
 }
+@media (max-width: 768px) {
+  footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .footer-container {
   width: 1160px;

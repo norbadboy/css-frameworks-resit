@@ -166,6 +166,10 @@ footer {
   @include md {
     padding-bottom: 15px;
   }
+  @include md {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .footer-container {
   width: 1160px;

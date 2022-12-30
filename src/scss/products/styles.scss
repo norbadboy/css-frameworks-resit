@@ -2,6 +2,64 @@
 @use "../typography" as *;
 @use "../layout" as *;
 
+.main--body {
+  @include md {
+    padding: 60px 0 0 0 !important;
+  }
+}
 .products-title {
   font-size: 40px;
+}
+#products--body {
+  @include md-up {
+    max-width: 1395px;
+  }
+  @include xl-up {
+    max-width: 1195px;
+  }
+}
+.col--container,
+.col--container-two {
+  height: 140px;
+  @include xsm {
+    height: 120px;
+  }
+}
+.col--container-two {
+  @include lg {
+    justify-content: start !important;
+  }
+}
+.col--container {
+  @include lg {
+    justify-content: end !important;
+  }
+}
+.col--body {
+  width: 140px;
+  @include xsm {
+    width: 120px;
+  }
+}
+.pagination--container {
+  position: static;
+  @include lg {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+  }
+}
+.page-link {
+  position: static;
+}
+#page-item-3 {
+  @include xsm {
+    display: none;
+  }
+}
+#page-item-4 {
+  @include sm {
+    display: none;
+  }
 }

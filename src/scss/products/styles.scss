@@ -2,6 +2,11 @@
 @use "../typography" as *;
 @use "../layout" as *;
 
+.row {
+  @include lg {
+    gap: 10px;
+  }
+}
 .main--body {
   @include md {
     padding: 60px 0 0 0 !important;
